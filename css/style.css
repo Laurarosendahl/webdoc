@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
+/* -------- reset css -------- */
+*,
+:after,
+:before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+#gradient {
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+  background: rgb(175,190,218);
+  background: linear-gradient(180deg, rgba(175,190,218,0.8505996148459384) 10%, rgba(2,15,28,1) 52%, rgba(2,15,28,1) 73%, rgba(167,183,213,0.8534007352941176) 100%);
+}
+
+#baggrund {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  object-fit: fill;
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  z-index: 1;
+}
+
+/* Font-settings */
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 6vw;
+  padding-left: 18vw;
+  padding-right: 18vw;
+  padding-top: 5vw;
+  padding-bottom: 1vw;
+}
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2vw;
+}
+
+h4 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2vw;
+  color: white;
+  padding-top: 10vw;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  font-size: 1.2vw;
+  padding-left: 18vw;
+  padding-right: 18vw;
+  padding-bottom: 10vw;
+  padding-top: 2vw;
+  line-height: 2.3;
+  color: white;
+  z-index: 1;
+}
+
+a, a:hover, a:focus {
+  text-decoration: none;
+  color: white;
+}
+
+/* ---------------- INDHOLD ---------------- */
+
+#video {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  object-fit: fill;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
+
+#video1{
+  display: none;
+}
+
+.videotekst {
+  position: absolute;
+  top: 10vw;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 1;
+}
+
+/* pil der bouncer */
+
+#pilbillede {
+  padding-top: 73vh;
+  width: 4vw;
+}
+
+#pil {
+  position: absolute;
+  z-index: 2;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.arrow {
+  text-align: center;
+  margin: 8% 0;
+}
+
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+/* artikel starter */
+
+.statistik-container {
+  padding-left: 18vw;
+  padding-right: 18vw;
+  padding-top: 10vw;
+  padding-bottom: 10vw;
+}
+
+.statistik {
+  font-size: 2vw;
+  padding: 0;
+}
+
+.kilde {
+  font-size: 1.2vw;
+  padding: 0;
+  margin: 0;
+}
+
+.sortmand  {
+  max-width: 6.5vw;
+  margin: 0.5vw;
+}
+
+.blaamand {
+  max-width: 6.5vw;
+  margin: 0.3vw;
+}
+
+.tog {
+  margin-left: 370vw;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+  width: 60vw;
+}
+
+
+#KBHcitat {
+  padding-bottom: 0;
+}
+
+/* kvinde med bevægende skygge */
+  .container {
+    position: absolute;
+    left: 54vw;
+    margin: 0;
+  }
+    .skygge {
+      transform: rotate(30deg);
+      width: 10vw;
+      margin: 0;
+    }
+    .item {
+      transform-origin: bottom left;
+    }
+
+.kvinde {
+  position: relative;
+  z-index: 1;
+  width: 25vw;
+  margin-top: 11vw;
+}
+
+/* hoved med krussedulle */
+
+#krudsedulle {
+  width: 10vw;
+  margin-left: 18vw;
+  margin-right: 18vw;
+}
+
+#hoved {
+  width: 35vw;
+  margin-left: 18vw;
+  margin-right: 18vw;
+}
+
+#instagram {
+  width: 19vw;
+  position: absolute;
+  z-index: 1;
+  margin-top: 1vw;
+  margin-left: 1vw;
+  border-radius: 15px;
+}
+
+#telefon {
+  z-index: 2; 
+  position: relative;
+  width: 21vw;
+}
+
+#tear {
+  width: 50vw;
+}
+
+/* beskeder */
+.besked1 {
+  width: 10vw;
+  margin-right: 48vw;
+}
+.besked2 {
+  width: 30vw;
+  margin-right: 30vw;
+}
+.besked3 {
+  width: 30vw;
+  margin-left: 30vw;
+  margin-top: 5vw;
+}
+.besked4 {
+  width: 30vw;
+  margin-right: 30vw;
+  margin-top: 5vw;
+}
+.besked5 {
+  width: 21vw;
+  margin-left: 40vw;
+  margin-top: 5vw;
+}
+
+/* besked lyde */
+
+#myAudio {
+  opacity: 0%;
+}
+
+#myAudio1 {
+  opacity: 0%;
+}
+
+.citat {
+  font-family: 'Reenie Beanie', cursive;
+  padding-left: 15vw;
+  padding-right: 15vw;
+  font-size: 2.5vw;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+  color: white;
+}
+
+.sigdet {
+  width: 12vw;
+  padding-bottom: 8vw;
+}
+
+.ventilen {
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  padding-left: 15vw;
+  padding-right: 15vw;
+  font-size: 1.6vw;
+  line-height: 2;
+  color: white;
+}
+
+.kilde1 {
+  padding-bottom: 5vw;
+}
+
+#hotlinebillede1 {
+  width: 3.5vw;
+  position: absolute;
+  margin-top: 2.3vw;
+  margin-left: 1.9vw;
+}
+
+#hotlinebillede2 {
+  transform: rotate(45deg);
+  width: 7vw;
+}
+
+.hotline-container {
+  padding-left: 18vw;
+  padding-right: 18vw;
+  padding-top: 2vw;
+  padding-bottom: 10vw;
+}
+
+.hotlineHeader {
+  font-size: 2vw;
+  padding: 0;
+}
+
+.hotlines {
+  font-size: 1.2vw;
+  padding: 0;
+}
+
+/* --------- her er positionerne for parallax --------- */
+
+#sky1 {
+  width: 20vw;
+  margin-top: 12vw;
+  margin-right: 40vw;
+}
+  #sky2 {
+    width: 10vw;
+    margin-top: 15vw;
+    margin-left: 25vw;
+  }
+    #sky3 {
+      width: 5vw;
+      margin-top: 10vw;
+      margin-left: 50vw;
+    }
+      #sky4 {
+        width: 20vw;
+        margin-top: 10vw;
+        margin-left: 60vw;
+      }
+        #sky5 {
+          width: 10vw;
+          margin-top: 13vw;
+          margin-left: 68vw;
+        }
+          #sky6 {
+            width: 8vw;
+            margin-top: 20vw;
+            margin-left: 70vw;
+          }
+#jord {
+  width: 25vw;
+  margin-top: 35vw;
+  margin-left: 37vw;
+}
+#pige {
+  width: 4.8vw;
+  margin-top: 22vw;
+  margin-left: 49vw;
+}
+#plantehojre {
+  width: 13vw;
+  margin-top: 24vw;
+  margin-left: 58vw;
+}
+    #plantemidth {
+      width: 13vw;
+      margin-top: 24vw;
+      margin-left: 52vw;
+    }
+      #plantemidt {
+        width: 15vw;
+        margin-top: 26.5vw;
+        margin-left: 39vw;
+      }
+        #plantevenstre {
+          width: 16vw;
+          margin-top: 27.5vw;
+          margin-left: 27vw;
+        }
+#bunke {
+  width: 7vw;
+  margin-top: 36vw;
+  margin-left: 32vw;
+}
+#skilt {
+  width: 10vw;
+  margin-top: 15vw;
+  margin-left: 45vw;
+}
+
+/* --------- tekst før og efter parallax - tilføj padding --------- */
+
+#ensomhedfylder {
+  padding-top: 15vw;
+  padding-bottom: 1vw;
+}
+
+#ligesomIda {
+  padding-top: 35vw;
+}
+
+#logo {
+  width: 15vw;
+  padding-bottom: 4vw;
+}
+
+/* Ny media screen - mobil */
+
+@media screen and (max-width: 992px) {
+  #video{
+    display: none;
+  }
+
+  #video1{
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  #baggrund{
+    display: none;
+  }
+
+  h4{
+    font-size: 1.8rem;
+  }
+
+  h3{
+    font-size: 2.5rem;
+  }
+
+  p{
+    font-size: 0.8rem;
+  }
+
+  .statistik{
+    font-size: 1rem;
+  }
+
+  .kilde{
+    font-size: 0.8rem;
+  }
+}
